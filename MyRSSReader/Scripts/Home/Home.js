@@ -388,6 +388,7 @@ function wireCloseItemHover(divElem) {
             var item = $(this).closest('.itemDiv');
             item.slideUp('slow', function () {
                 item.remove();
+                // small change
             });
         });
     }
