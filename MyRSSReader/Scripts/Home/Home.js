@@ -369,9 +369,21 @@ function wireCloseButtonHover(divElem) {
             }
         );
         $('.spanCloseFeed').click(function () {
-            $(this).closest('.feedDiv').remove();
-            $('.feedDiv').css('clear', 'none');
-            scaleFeeds();
+            var feedDiv = $(this).closest('.feedDiv');
+            $(feedDiv).animate({
+                width: "0%"
+            },
+            {
+                duration: 1000,
+                specialEasing: {
+                    width: 'linear'
+                },
+                complete: function () {
+                    feedDiv.remove();
+                    $('.feedDiv').css('clear', 'none');
+                    scaleFeeds();
+                }
+            });
         });
     }
 }
@@ -388,7 +400,6 @@ function wireCloseItemHover(divElem) {
             var item = $(this).closest('.itemDiv');
             item.slideUp('slow', function () {
                 item.remove();
-                // small change
             });
         });
     }
