@@ -1,0 +1,31 @@
+﻿
+@model Feed
+
+@{
+    Layout = null;
+}
+
+<div class="feedDiv" data-url="@Model.Url">
+    <span class="spanSearchItem">
+        <a href="#" class="aSearchItem">Search</a>
+        <br />
+        <input type="text" class="txtSearchItem" />
+        <img class="item-header-button btnSearchItem" src="@Url.Content("~/Content/Images/search.png")" />
+    </span>
+    <span class="spanCloseFeed"><img class="btnCloseFeed" src="@Url.Content("~/Content/Images/close.png")" /></span>
+    <h1>@Model.Title</h1>
+    @foreach (var item in Model.Items)
+    {
+        <div class="itemDiv">
+            <div class="divHeadline">
+                <a href="@item.Link">@item.Title</a>
+                <br />
+                <span class="dateSpan" data-date_time="@item.PublicationDate">@item.PublicationDate.ToString("MMMM d, yyyy")</span>
+            </div>
+            <div class="divDescription">
+                @Html.Raw(item.Description)
+            </div>
+            <hr />
+        </div>
+    }
+</div>

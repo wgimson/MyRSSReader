@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feeds>
+  <feed url="http://news.google.com/?output=rss" />
+  <feed url="http://www.mufon.com/17/feed" />
+  <feed url="http://www.bfro.net/GDB/NewAdditionsRss.asp" />
+</feeds>

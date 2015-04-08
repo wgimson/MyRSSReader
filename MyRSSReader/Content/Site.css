@@ -1,0 +1,141 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background:#DADFE2;
+}
+
+footer {
+    clear: left;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 95%;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.divHeadline {
+    /*float: right;*/
+}
+
+.divDescription {
+    /*float: left;*/
+}
+
+.spanDate {
+
+}
+
+.divDescription img {
+    margin-top: 41%;
+}
+
+td.j > font > div:first-of-type {
+    height: 0px;
+}
+
+.divItemContainer {
+    border-radius: 10px;
+    padding: 10px 10px 0px;
+}
+
+.divItemContainer:hover {
+    -webkit-box-shadow: -7px 7px 5px -2px rgba(132,128,158,0.76);
+    -moz-box-shadow: -7px 7px 5px -2px rgba(132,128,158,0.76);
+    box-shadow: -7px 7px 5px -2px rgba(132,128,158,0.76);
+}
+
+ul.navbar-nav {
+    float: left;
+}
+
+span.navbar-header-title  {
+    color: white;
+    float: right;
+}
+
+div.navbar-header  {
+    width: 33%;
+    float: left;
+}
+
+div.navbar-collapse {
+    width: 33%;
+    float: left;
+}
+
+img.navbar-header-button {
+    float: right;
+    height: 29px;
+}
+
+img.item-header-button {
+    height: 29px;
+    display: none;
+}
+
+.feedDiv {
+    margin-top: 35px;
+    float: left;
+    padding: 10px;
+    min-height: 500px;
+    max-height: 1350px;
+    overflow-x: scroll;
+    border: 1px solid #B2B0B0;
+    border-radius: 10px;
+    -webkit-box-shadow: -11px 13px 24px 0px rgba(0,0,0,0.68);
+    -moz-box-shadow: -11px 13px 24px 0px rgba(0,0,0,0.68);
+    box-shadow: -11px 13px 24px 0px rgba(0,0,0,0.68);
+    padding:17px;
+    background: #D3E4EB;
+}
+
+div.container:not(.body-content) {
+    margin-left: 11%;
+    width: 1350px;
+}
+
+span.url {
+    color: white;
+}
+
+span#spanSubmitUrl {
+    display: none;
+}
+
+.inputError {
+    border: 2px solid #FF6060;
+    color: #FF6060;
+}
+
+.btnCloseFeed {
+    width: 30px;
+}
+
+.spanCloseFeed, .spanCloseItem {
+    float: right;
+}
+
+.spanSearchItem {
+    float: left;
+    width: 90%;
+}
+
+.txtSearchItem {
+    display: none;
+}
